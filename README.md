@@ -8,7 +8,7 @@ Humans can quite trivially summarize a document after reading it. However, this 
 
 ## Evaluation Metrics
 
-1. **ROUTE-N**: Word n-gram count of matches between the model and the gold summary. It is a generalization of "recall" because it evaluates the proportion of words in the gold summary captured by the candidate summary, and extra n-grams in the candidate summary do not affect the score.
+1. **ROUGE-N**: Word n-gram count of matches between the model and the gold summary. It is a generalization of "recall" because it evaluates the proportion of words in the gold summary captured by the candidate summary, and extra n-grams in the candidate summary do not affect the score.
    - ROUGE-1 and ROUGE-2 is often used.
    - The ROUGE-1 means word base, so its order is not regarded. So "apple bee" and "bee apple" has the same ROUGE-1 score.
    - But if ROUGE-2, "apple bee" becomes single entity so "apple bee" and "bee apple" does not match.
